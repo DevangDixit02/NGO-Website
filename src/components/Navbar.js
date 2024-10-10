@@ -100,12 +100,7 @@ const Navbar = () => {
           >
             About Us
           </button>
-          <button
-            onClick={() => navigateTo("/gallery")}
-            className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"
-          >
-            Gallery
-          </button>
+        
           <button
             onClick={() => navigateTo("/join-us")}
             className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"
@@ -143,12 +138,7 @@ const Navbar = () => {
             >
               About Us
             </button>
-            <button
-              onClick={() => navigateTo("/gallery")}
-              className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"
-            >
-              Gallery
-            </button>
+           
             <button
               onClick={() => navigateTo("/join-us")}
               className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"

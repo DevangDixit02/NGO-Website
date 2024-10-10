@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
-import image1 from "../assets/program/image211.png";
+import image1 from "../assets/program/2.png";
 import image2 from "../assets/program/Pratog.png";
-import image3 from "../assets/program/image12.png";
-import image4 from "../assets/program/mission.png";
+import image3 from "../assets/program/10.png";
+import image4 from "../assets/program/32.png";
 
 const Programs = () => {
   const programs = [

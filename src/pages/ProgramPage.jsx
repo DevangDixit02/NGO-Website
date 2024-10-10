@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown"; // Import react-markdown
-import image1 from "../assets/program/image211.png";
+import image1 from "../assets/program/2.png";
 import image2 from "../assets/program/Pratog.png";
-import image3 from "../assets/program/image12.png";
-import image4 from "../assets/program/mission.png";
+import image3 from "../assets/program/10.png";
+import image4 from "../assets/program/32.png";
 
 // Define the details for each program, including the images
 const programDetails = {
