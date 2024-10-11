@@ -18,7 +18,7 @@ const Recognition = () => {
           <img
             src={heroImage}
             alt="Recognition"
-            className="w-full h-64 object-cover object-top rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105" // Added hover effect
+            className="w-full h-52 object-cover object-top rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105" // Added hover effect
           />
         </div>
 

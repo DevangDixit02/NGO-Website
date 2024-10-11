@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import image1 from "../assets/program/2.png";
-import image2 from "../assets/program/Pratog.png";
+import image2 from "../assets/program/Untitled design.png";
 import image3 from "../assets/program/10.png";
-import image4 from "../assets/program/32.png";
+import image4 from "../assets/program/16.png";
 
 const Programs = () => {
   const programs = [
@@ -11,7 +11,7 @@ const Programs = () => {
       title: "Antariksh Gyaan Abhiyaan",
       description: "Teaching about space and how space works",
       image: image1,
-      path: "/programs/antariksh-gyaan-abhiyaan", // Add path for navigation
+      path: "/programs/antariksh-gyaan-abhiyaan",
     },
     {
       title: "Antariksh Prayogshala",
@@ -37,25 +37,27 @@ const Programs = () => {
   ];
 
   return (
-    <section id="programs" className="bg-white py-12">
-      <div className="container  mx-auto text-center">
-        <h2 className="text-4xl font-extrabold mb-8 text-gray-800">
+    <section id="programs" className="bg-white py-16">
+      <div className="container mx-auto text-center">
+        <h2 className="text-5xl font-extrabold mb-12 text-gray-800">
           Our Programs
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {programs.map((program, index) => (
             <Link to={program.path} key={index} className="no-underline">
-              <div className="bg-gray-100 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl hover:scale-105  flex flex-col justify-between">
+              <div className="bg-gray-100 p-8 rounded-xl shadow-lg transition-transform duration-300 hover:shadow-xl hover:scale-105 flex flex-col justify-between h-full">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="mx-auto mb-4 h-full w-full object-cover rounded-md" // Set to larger and rectangular
+                  className="mx-auto mb-6 h-48 w-full object-cover rounded-lg" // Enlarge the image for better visibility
                 />
-                <h3 className="text-xl font-semibold mb-2 text-gray-900 truncate">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
                   {program.title}
                 </h3>
-                <p className="text-gray-700 text-sm truncate">
-                  {program.description}
+                <p className="text-gray-700 text-sm leading-relaxed overflow-hidden text-ellipsis">
+                  {program.description.length > 100
+                    ? `${program.description.substring(0, 100)}...`
+                    : program.description}
                 </p>
               </div>
             </Link>

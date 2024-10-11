@@ -11,37 +11,34 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8 mt-12">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* About Us Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
             <p className="text-gray-400">
-              We are committed to making a difference in the lives of
-              individuals and communities through our various initiatives.
-            </p>
-            <p className="text-gray-400">
-              <a
-                href="https://www.youtube.com/watch?v=4e9QFp-z01k"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-400 hover:underline"
-              >
-                Watch our NGO Documentary
-              </a>
-            </p>
-            <p className="text-gray-400">
-              <a
-                href="https://drive.google.com/file/d/1h9v0DR2CFIIgjqi5HItodFhDykFJa6eV/view?usp=share_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green-400 hover:underline"
-              >
-                AGA Mission Report
-              </a>
+              Igniting Dreams of Young Minds, foundation is a platform to
+              promote space and satellite education in young minds around the
+              world. It is authorized by Indian Space Research Organization
+              (ISRO) as “Space Tutor” organization, playing a vibrant role in
+              ensuring the dissemination of the enriched knowledge in the space
+              domain.
             </p>
           </div>
+
+          {/* Resources Section */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="text-gray-400 space-y-2">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=4e9QFp-z01k&ab_channel=IDYMINDIATV"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:underline"
+                >
+                  Mission Documentary
+                </a>
+              </li>
               <li>
                 <a
                   href="https://drive.google.com/file/d/1xKcPSNkurKnFn_KPMVhsnSZkAbvfFqNP/view?usp=share_link"
@@ -49,7 +46,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-green-400 hover:underline"
                 >
-                  Brochure
+                  AGA Brochure
                 </a>
               </li>
               <li>
@@ -59,22 +56,59 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-green-400 hover:underline"
                 >
-                  Surajpur AGA Mission
+                  AGA Mission Surajpur
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1h9v0DR2CFIIgjqi5HItodFhDykFJa6eV/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-400 hover:underline"
+                >
+                  AGA Mission Chhattisgarh
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us Section */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul className="text-gray-400 space-y-2">
               <li>
                 <a
                   href="https://www.instagram.com/antarikshgyaanabhiyaan/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li className="text-gray-400">
+                Email:{" "}
+                <a
+                  href="mailto: idymfoundation@gmail.com"
                   className="text-green-400 hover:underline"
                 >
-                  Follow us on Instagram
+                  idymfoundation@gmail.com
+                </a>
+              </li>
+              <li className="text-gray-400">
+                Phone:{" "}
+                <a
+                  href="tel:8879476341"
+                  className="text-green-400 hover:underline"
+                >
+                  8879476341
                 </a>
               </li>
             </ul>
           </div>
         </div>
+
+        {/* Support Button */}
         <div className="mt-8 text-center">
           <button
             onClick={handleSupportClick}
@@ -84,9 +118,10 @@ const Footer = () => {
           </button>
         </div>
       </div>
+
+      {/* Footer Bottom */}
       <div className="text-center text-gray-400 mt-8">
-        &copy; {new Date().getFullYear()} IDYM. All Rights
-        Reserved.
+        &copy; {new Date().getFullYear()} IDYM. All Rights Reserved.
       </div>
     </footer>
   );

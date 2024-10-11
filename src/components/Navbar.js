@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // For navigation
 import logo from "../assets/logo.jpg";
+import logo2 from "../assets/logo2.png";
+
 import isroLogo from "../assets/partner/isro.png"; // Assuming this is the ISRO logo path
 
 const Navbar = () => {
@@ -27,12 +29,18 @@ const Navbar = () => {
             className="h-12 cursor-pointer"
             onClick={() => navigate("/")} // Navigate to home page
           />
+          <img
+            src={logo2}
+            alt="NGO Logo"
+            className="h-12 cursor-pointer"
+             // Navigate to home page
+          />
           <div className="relative">
             <img
               src={isroLogo}
               alt="ISRO Logo"
               className="h-12 cursor-pointer"
-              onClick={() => navigate("/isro")} // Navigate to ISRO page
+              onClick={() => navigate()} // Navigate to ISRO page
             />
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded px-1 py-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               ISRO Logo
@@ -100,7 +108,7 @@ const Navbar = () => {
           >
             About Us
           </button>
-        
+
           <button
             onClick={() => navigateTo("/join-us")}
             className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"
@@ -138,7 +146,7 @@ const Navbar = () => {
             >
               About Us
             </button>
-           
+
             <button
               onClick={() => navigateTo("/join-us")}
               className="text-gray-600 hover:bg-gray-200 hover:text-gray-900 transition-colors duration-300 py-2 px-4 rounded"

@@ -22,7 +22,6 @@ function Home() {
       {/* <Stories /> */}
       <Partners />
       <SupportCause />
-      <Footer />
     </div>
   );
 }

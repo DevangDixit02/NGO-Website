@@ -10,7 +10,7 @@ const Intro = () => {
   };
 
   return (
-    <section className="py-20 bg-white min-h-[500px]">
+    <section className="py-6 md:py-20 bg-white min-h-[500px]">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
           Igniting Dreams of Young Minds Foundation

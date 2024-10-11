@@ -10,6 +10,7 @@ import SupportUs from "./pages/SupportUs";
 import Programs from "./components/Programs";
 import Navbar from "./components/Navbar";
 import ProgramPageWithBanner from "./pages/ProgramPageWithBanner";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/support-us" element={<SupportUs />} />
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

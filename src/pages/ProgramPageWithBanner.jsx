@@ -2,9 +2,14 @@ import React from "react";
 import ReactMarkdown from "react-markdown"; // Import react-markdown
 import bannerImage from "../assets/hero/3.png";
 import image1 from "../assets/program/2.png";
-import image2 from "../assets/program/Pratog.png";
+import image2 from "../assets/program/Untitled design.png";
 import image3 from "../assets/program/10.png";
-import image4 from "../assets/program/32.png";
+import image4 from "../assets/program/16.png";
+import image5 from "../assets/program/17.png";
+import eventImage1 from "../assets/program/5.png"; // Add event images
+import eventImage2 from "../assets/program/35.png";
+import eventImage3 from "../assets/program/32.png";
+import eventImage4 from "../assets/program/33.png";
 
 // Define the details for each program, including images and detailed descriptions
 const programs = [

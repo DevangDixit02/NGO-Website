@@ -39,15 +39,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative py-3 w-full h-[90vh] overflow-hidden"
+      className="relative py-3 w-full h-[70vh] md:h-[90vh] overflow-hidden"
     >
       <Slider {...settings}>
         {slides.map((image, index) => (
-          <div key={index} className="h-full relative">
+          <div key={index} className="relative">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="h-full w-full object-cover"
+              className="h-[70vh] md:h-[90vh] w-full object-cover"
             />
             {/* Overlay with semi-opacity */}
             <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
