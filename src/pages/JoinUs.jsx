@@ -59,8 +59,8 @@ const JoinUs = () => {
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="text-gray-600 mb-2">
             Support Email:{" "}
-            <a href="mailto:support@idym.org" className="text-blue-600">
-              support@idym.org
+            <a href="mailto:idymfoundation@gmail.com" className="text-blue-600">
+              idymfoundation@gmail.com
             </a>
           </p>
           <h3 className="text-xl font-semibold mt-4 mb-2">General Inquiries</h3>
