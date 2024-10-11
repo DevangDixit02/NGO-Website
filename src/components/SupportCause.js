@@ -2,12 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import supportImage from "../assets/donate.png"; // Import your image
 
+const donationLink = process.env.REACT_APP_DONATION_LINK;
 const SupportCause = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
-
-  const handleDonateClick = () => {
-    navigate("/support-us"); // Navigate to the Support Us page
-  };
+ 
 
   return (
     <section
@@ -37,12 +34,13 @@ const SupportCause = () => {
           us in our mission to provide resources, education, and support to
           those in need.
         </p>
+        <a href={donationLink} target="_blank" rel="noopener noreferrer">
         <button
-          onClick={handleDonateClick} // Add onClick handler to the button
           className="bg-yellow-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition duration-300"
         >
           Donate Now
         </button>
+        </a>
         <div className="mt-8">
           <p className="text-sm italic text-white">
             Every little bit counts. Your donation helps us to continue our

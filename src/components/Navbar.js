@@ -4,6 +4,8 @@ import logo from "../assets/logo.jpg";
 import logo2 from "../assets/logo2.png";
 
 import isroLogo from "../assets/partner/isro.png"; // Assuming this is the ISRO logo path
+const donationLink = process.env.REACT_APP_DONATION_LINK;
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +35,7 @@ const Navbar = () => {
             src={logo2}
             alt="NGO Logo"
             className="h-12 cursor-pointer"
-             // Navigate to home page
+            // Navigate to home page
           />
           <div className="relative">
             <img
@@ -115,12 +117,13 @@ const Navbar = () => {
           >
             Join Us
           </button>
+          <a href={donationLink} target="_blank" rel="noopener noreferrer">
           <button
-            onClick={() => navigateTo("/support-us")}
             className="bg-green-600 text-white hover:bg-green-700 transition-colors duration-300 py-2 px-4 rounded"
           >
             Support Us
           </button>
+          </a>
         </nav>
       </div>
 

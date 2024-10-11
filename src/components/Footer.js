@@ -2,11 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Footer = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+const navigate = useNavigate(); // Initialize useNavigate
+const donationLink = process.env.REACT_APP_DONATION_LINK;
 
-  const handleSupportClick = () => {
-    navigate("/support-us"); // Navigate to the Support Us page
-  };
+ 
 
   return (
     <footer className="bg-gray-800 text-white py-8 mt-12">
@@ -110,12 +109,13 @@ const Footer = () => {
 
         {/* Support Button */}
         <div className="mt-8 text-center">
+        <a href={donationLink} target="_blank" rel="noopener noreferrer">
           <button
-            onClick={handleSupportClick}
             className="bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-500 transition"
           >
             Support Our Cause
           </button>
+          </a>
         </div>
       </div>
 
