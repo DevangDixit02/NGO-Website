@@ -1,20 +1,16 @@
-# 🌐 IDYM Website
+# IDYM Foundation Website
 
-A professional and responsive website developed for **IDYM Foundation**, an NGO committed to youth development, education, and empowerment. This platform showcases IDYM’s mission, programs, and events, and offers an intuitive way for users to engage and get involved.
+A modern, responsive website built for **IDYM Foundation**, a youth-led NGO dedicated to education, empowerment, and community development. Designed for storytelling, outreach, and public engagement.
 
-
-## 🚀 Features
-
-- ✨ Clean and modern UI/UX
-- 📱 Fully responsive across all devices
-- 📄 Pages for About, Programs, Events, Gallery, and Contact
-- 📨 Integrated contact form
-- 🔗 Social media links
-- ⚡ Fast performance using Vite
-
-## 🛠️ Tech Stack
-
-- **HTML5** / **CSS3**
+## ⚙️ Tech Stack
+- **Next.js** (App Router)
 - **Tailwind CSS**
-- **JavaScript**
-- **Vite** – lightning-fast development tooling
+- **React Markdown**
+- **Animate.css**, **Slick Carousel**
+
+## ✨ Features
+- Static and dynamic pages using Markdown
+- Smooth page transitions and responsive layout
+- Carousel sliders for testimonials/events
+- Clean, scalable component structure
+
